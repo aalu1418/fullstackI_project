@@ -30,5 +30,12 @@ the	git	commits	don’t	demonstrate	this.	For	individuals	working	alone,	your	gi
 history	should	demonstrate	the	use	of	feature	branches.][15%]
 6s. Bonus	5%	- connect	to	a	smart	contract	or	user’s	balance	 metaMask	balance	[5%]
 
-### Resources & Ideas
+### Resources
 - [Skeleton CSS](http://getskeleton.com/)
+
+### Ideas
+- Single page website
+- Realtime plotting of price of various cryptocurrencies (js librarie - api calls)
+- Ability to toggle on/off (buttons - js listeners)
+- Ability to change currency: USD/CAD/Euro (buttons - js listeners - api calls)
+- Show bar w/ current metamask balance in multiple currencies (web3)
