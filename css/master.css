@@ -1,0 +1,36 @@
+.header {
+  padding: 25%;
+  text-align: center;
+}
+
+.content {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.footer {
+  padding-top: 2.5%;
+}
+
+.material-icons.logo {
+  font-size: 75px;
+  animation: shadow-pulse 3s infinite;
+}
+
+.continue-bar {
+  text-align: center;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
