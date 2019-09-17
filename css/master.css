@@ -5,8 +5,8 @@
 }
 
 .header {
-  padding-top: 30%;
-  padding-bottom: 30%;
+  padding-top: 20%;
+  padding-bottom: 20%;
   text-align: center;
 }
 
@@ -19,8 +19,21 @@
   padding-top: 2.5%;
 }
 
+.row.option-box {
+  padding-top: 5%;
+}
+
 .material-icons.logo {
   font-size: 75px;
+  animation: shadow-pulse 3s infinite;
+}
+
+.ticker > .ticker-change {
+  font-size: 45px;
+  color: green;
+}
+.material-icons.ticker-change-icon {
+  font-size: 60px;
   animation: shadow-pulse 3s infinite;
 }
 
@@ -28,9 +41,19 @@
   text-align: center;
 }
 
+.ticker {
+  list-style-type: none;
+}
+
+.ticker li {
+  font-size: 15pt;
+  margin-bottom: 0pt;
+}
+
 .ticker-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 50%;
 }
 
