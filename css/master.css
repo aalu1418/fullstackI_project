@@ -1,7 +1,7 @@
 .one-quarter.column {
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
 }
 
 .header {
@@ -28,9 +28,9 @@
   text-align: center;
 }
 
-.ticker-row{
+.ticker-row {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   width: 50%;
 }
 
@@ -60,20 +60,23 @@
 }
 
 @media (max-width: 800px) {
-  .flex-row{
+  .flex-row {
     flex-direction: column;
   }
-  .one-third.flex-column{
+  .one-third.flex-column {
     flex-direction: row;
     width: 100%;
   }
 
-  .row.option-box{
+  .row.option-box {
     width: 50%;
   }
 
-  .ticker-row{
+  .ticker-row {
     width: 100%;
   }
 
+  #plot-box {
+    width: 100%;
+  }
 }
