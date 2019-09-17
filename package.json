@@ -1,0 +1,14 @@
+{
+  "name": "fullstacki_project",
+  "version": "1.0.0",
+  "description": "### Project Specs FULL\tSTACK\tDEVELOPER\t– 1\t– FINAL\tPROJECT DUE\tDATE\t– September\t29,\t2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.8.0"
+  }
+}
