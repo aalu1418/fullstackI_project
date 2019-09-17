@@ -33,7 +33,7 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 ### Resources
 - [Skeleton CSS](http://getskeleton.com/)
 - [Material Design Icons](https://material.io/resources/icons/?style=baseline)
-- [Icon Pulsing] (http://www.tipue.com/blog/css-pulse-buttons/)
+- [Icon Pulsing](http://www.tipue.com/blog/css-pulse-buttons/)
 
 ### Ideas
 - Single page website
