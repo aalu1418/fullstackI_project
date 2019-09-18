@@ -34,6 +34,7 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [Skeleton CSS](http://getskeleton.com/)
 - [Material Design Icons](https://material.io/resources/icons/?style=baseline)
 - [Icon Pulsing](http://www.tipue.com/blog/css-pulse-buttons/)
+- [Coin Gecko - crypto prices api](https://www.coingecko.com/en)
 - [Metamask Integration](https://medium.com/coinmonks/tutorial-how-to-connect-a-javascript-front-end-to-a-smart-contract-6af4bdf45f7a)
 - [Web3 Introduction](http://www.dappuniversity.com/articles/web3-js-intro)
 
@@ -43,4 +44,4 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - Ability to toggle on/off (buttons - js listeners)
 - Ability to change currency: USD/CAD/Euro (buttons - js listeners - api calls)
 - Show bar w/ current metamask balance in multiple currencies (web3)
-- Axios for ajax calls
+- Axios for ajax calls (using jquery instead)

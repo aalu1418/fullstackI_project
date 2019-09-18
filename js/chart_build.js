@@ -11,15 +11,17 @@ let chartColors = (opacity) => (
 let mainColors = chartColors(1)
 let fillColors = chartColors(0.2)
 
+//Chart Updates
+
 // Chart information---------------------------------
 var ctx = document.getElementById("myChart").getContext("2d");
 var myChart = new Chart(ctx, {
   type: "line",
   data: {
-    labels: [1, 2, 3],
+    labels: new Array(20),
     datasets: [
       {
-        label: "test 1",
+        label: "Bitcoins",
         data: [1, 2, 3],
         fill: true,
         backgroundColor: fillColors.blue,
@@ -27,7 +29,23 @@ var myChart = new Chart(ctx, {
         lineTension: 0.05,
       },
       {
-        label: "test 2",
+        label: "Bitcoin Cash",
+        data: [3, 2, 1],
+        fill: true,
+        backgroundColor: fillColors.green,
+        borderColor: mainColors.green,
+        lineTension: 0.05,
+      },
+      {
+        label: "Ethereum",
+        data: [2, 2, 1],
+        fill: true,
+        backgroundColor: fillColors.orange,
+        borderColor: mainColors.orange,
+        lineTension: 0.05,
+      },
+      {
+        label: "Litecoin",
         data: [3, 1, 2],
         fill: true,
         backgroundColor: fillColors.red,
