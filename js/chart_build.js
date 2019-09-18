@@ -19,7 +19,7 @@ var myChart = new Chart(ctx, {
     labels: [1, 2, 3],
     datasets: [
       {
-        label: "test 1",
+        label: "Bitcoins",
         data: [1, 2, 3],
         fill: true,
         backgroundColor: fillColors.blue,
@@ -27,7 +27,23 @@ var myChart = new Chart(ctx, {
         lineTension: 0.05,
       },
       {
-        label: "test 2",
+        label: "Bitcoin Cash",
+        data: [1, 2, 3],
+        fill: true,
+        backgroundColor: fillColors.blue,
+        borderColor: mainColors.blue,
+        lineTension: 0.05,
+      },
+      {
+        label: "Ethereum",
+        data: [1, 2, 3],
+        fill: true,
+        backgroundColor: fillColors.blue,
+        borderColor: mainColors.blue,
+        lineTension: 0.05,
+      },
+      {
+        label: "Litecoin",
         data: [3, 1, 2],
         fill: true,
         backgroundColor: fillColors.red,
