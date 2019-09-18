@@ -16,7 +16,11 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
   padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .row.option-box {
@@ -43,11 +47,13 @@
 
 .ticker {
   list-style-type: none;
+  margin-left: 25pt;
 }
 
 .ticker li {
-  font-size: 15pt;
+  font-size: 12pt;
   margin-bottom: 0pt;
+  width : 100px;
 }
 
 .ticker-row {
@@ -55,6 +61,12 @@
   flex-direction: row;
   align-items: center;
   width: 50%;
+}
+
+.ticker-symbol {
+  margin: 0;
+  font-size: 24pt;
+  font-weight: bold;
 }
 
 .flex-row {
@@ -66,6 +78,10 @@
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+#github-logo {
+  height: 40px;
 }
 
 @keyframes shadow-pulse {

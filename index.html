@@ -80,8 +80,13 @@
           <div class="ticker-row">
             <div class="one-quarter column">
               <ul class = "ticker">
-                <li><b>Bitcoin</b></li>
-                <li>$100.00 </li>
+                <li class = "ticker-row">
+                  <p class = "ticker-symbol">&#8383;</p>
+                  <ul class = "ticker">
+                    <li><b>Bitcoin</b></li>
+                    <li>$100.00 </li>
+                  </ul>
+                </li>
                 <li class="ticker-row ticker-change">
                   $0.01 <i class="material-icons ticker-change-icon">expand_less</i>
                 </li>
@@ -89,8 +94,13 @@
             </div>
             <div class="one-quarter column">
               <ul class = "ticker">
-                <li><b>Bitcoin Cash</b></li>
-                <li>$100.00 </li>
+                <li class = "ticker-row">
+                  <p class = "ticker-symbol">&#8383;</p>
+                  <ul class = "ticker">
+                    <li><b>Bitcoin Cash</b></li>
+                    <li>$100.00 </li>
+                  </ul>
+                </li>
                 <li class="ticker-row ticker-change">
                   $0.01 <i class="material-icons ticker-change-icon">expand_less</i>
                 </li>
@@ -100,8 +110,13 @@
           <div class="ticker-row">
             <div class="one-quarter column">
               <ul class = "ticker">
-                <li><b>Ethereum</b></li>
-                <li>$100.00 </li>
+                <li class = "ticker-row">
+                  <p class = "ticker-symbol">&#926;</p>
+                  <ul class = "ticker">
+                    <li><b>Ethereum</b></li>
+                    <li>$100.00 </li>
+                  </ul>
+                </li>
                 <li class="ticker-row ticker-change" style = "color:red">
                   $0.01 <i class="material-icons ticker-change-icon">expand_more</i>
                 </li>
@@ -109,8 +124,13 @@
             </div>
             <div class="one-quarter column">
               <ul class = "ticker">
-                <li><b>Litecoin</b></li>
-                <li>$100.00 </li>
+                <li class = "ticker-row">
+                  <p class = "ticker-symbol">&#321;</p>
+                  <ul class = "ticker">
+                    <li><b>Litecoin</b></li>
+                    <li>$100.00 </li>
+                  </ul>
+                </li>
                 <li class="ticker-row ticker-change">
                   $0.01 <i class="material-icons ticker-change-icon">expand_less</i>
                 </li>
@@ -120,22 +140,19 @@
         </div>
       </div>
       <div class="row content">
-        <h4>Metamask Balance Placeholder</h4>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Venenatis cras sed
-        felis eget velit aliquet sagittis. Ut ornare lectus sit amet est. Et
-        netus et malesuada fames. Aliquam vestibulum morbi blandit cursus risus
-        at. Nisi lacus sed viverra tellus in hac. Nibh mauris cursus mattis
-        molestie a iaculis at. Nulla porttitor massa id neque aliquam vestibulum
-        morbi blandit. Ullamcorper sit amet risus nullam eget felis eget.
-        Eleifend donec pretium vulputate sapien nec. Laoreet non curabitur
-        gravida arcu ac tortor dignissim convallis. In iaculis nunc sed augue
-        lacus viverra vitae. Ultrices dui sapien eget mi.
+        <h4 style ="margin-bottom:0">Metamask Balance: <b>0 ether</b> </h4>
+        <p>on the ropsten test network</p>
+        <a class="button button-primary" id="ref-metamask">Refresh Balance</a>
       </div>
       <div class="row footer" style="border-top: 1px solid #eee">
-        <p>
-          INSERT LINKS HERE
-        </p>
+          <div class="one-half column" style = "text-align:left">
+            last updated: September 2019
+          </div>
+          <div class="one-half column" style = "text-align:right">
+            <a href="https://github.com/aalu1418/fullstackI_project">
+              <img id = "github-logo" src="images/github_logo.png" alt="github logo">
+            </a>
+          </div>
       </div>
     </div>
 
