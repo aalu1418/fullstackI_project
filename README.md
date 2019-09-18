@@ -28,7 +28,7 @@ working	with	a	partner,	you’ll	need	to	show	git	commits	from	each	partner	– 
 want	to	see	that	each	partner	has	coded	at	least	1	feature,	both	partners	will	lose	15%	if
 the	git	commits	don’t	demonstrate	this.	For	individuals	working	alone,	your	git	commit
 history	should	demonstrate	the	use	of	feature	branches.][15%]
-6s. Bonus	5%	- connect	to	a	smart	contract	or	user’s	balance	 metaMask	balance	[5%]
+6. Bonus	5%	- connect	to	a	smart	contract	or	user’s	balance	 metaMask	balance	[5%]
 
 ### Resources
 - [Skeleton CSS](http://getskeleton.com/)
