@@ -1,5 +1,12 @@
+.one-quarter.column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .header {
-  padding: 25%;
+  padding-top: 20%;
+  padding-bottom: 20%;
   text-align: center;
 }
 
@@ -9,7 +16,15 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
   padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.row.option-box {
+  padding-top: 5%;
 }
 
 .material-icons.logo {
@@ -17,8 +32,56 @@
   animation: shadow-pulse 3s infinite;
 }
 
+.ticker > .ticker-change {
+  font-size: 45px;
+  color: green;
+}
+.material-icons.ticker-change-icon {
+  font-size: 60px;
+  animation: shadow-pulse 3s infinite;
+}
+
 .continue-bar {
   text-align: center;
+}
+
+.ticker {
+  list-style-type: none;
+  margin-left: 25pt;
+}
+
+.ticker li {
+  font-size: 12pt;
+  margin-bottom: 0pt;
+  width : 100px;
+}
+
+.ticker-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+.ticker-symbol {
+  margin: 0;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#github-logo {
+  height: 40px;
 }
 
 @keyframes shadow-pulse {
@@ -32,5 +95,27 @@
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .one-third.flex-column {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .row.option-box {
+    width: 50%;
+  }
+
+  .ticker-row {
+    width: 100%;
+  }
+
+  #plot-box {
+    width: 100%;
   }
 }

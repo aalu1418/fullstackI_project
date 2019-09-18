@@ -10,6 +10,7 @@
       content="A basic view of prices of various cryptocurrencies in various currencies"
     />
     <meta name="author" content="Aaron Lu" />
+    <!-- <link rel="icon" href="images/favicon.png"> -->
 
     <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,62 +52,107 @@
           <i class="material-icons logo">expand_more</i>
         </div>
       </div>
-      <div class="row content" style="padding-top: 10%">
-        <div class="two-thirds column">
+      <div class="row content flex-row" style="padding-top: 10%">
+        <div class="two-thirds column" id="plot-box">
           <h4>Price History</h4>
           <canvas id="myChart" width="400" height="300"></canvas>
-          <script>s
-          </script>
+          <script></script>
         </div>
-        <div class="one-third column">
-          <h5>Button Placeholder</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Venenatis cras sed felis eget velit aliquet sagittis. Ut ornare
-            lectus sit amet est. Et netus et malesuada fames. Aliquam vestibulum
-            morbi blandit cursus risus at. Nisi lacus sed viverra tellus in hac.
-            Nibh mauris cursus mattis molestie a iaculis at. Nulla porttitor
-            massa id neque aliquam vestibulum morbi blandit. Ullamcorper sit
-            amet risus nullam eget felis eget. Eleifend donec pretium vulputate
-            sapien nec. Laoreet non curabitur gravida arcu ac tortor dignissim
-            convallis. In iaculis nunc sed augue lacus viverra vitae. Ultrices
-            dui sapien eget mi.
-          </p>
+        <div class="one-third column flex-column">
+          <div class="row option-box">
+            <h5>Cryptocurrencies</h5>
+            <a class="button button-primary" id="BTC">Bitcoin</a>
+            <a class="button button-primary" id="BCH">Bitcoin Cash</a>
+            <a class="button button-primary" id="ETH">Ethereum</a>
+            <a class="button button-primary" id="LTC">Litecoin</a>
+          </div>
+          <div class="row option-box">
+            <h5>Currency Conversion</h5>
+            <a class="button button-primary" id="CAD">CAD</a>
+            <a class="button button-primary" id="USD">USD</a>
+            <a class="button button-primary" id="EUR">Euro</a>
+          </div>
         </div>
       </div>
       <div class="row content">
-        <h4>Stock Ticker Placeholder</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis
-          cras sed felis eget velit aliquet sagittis. Ut ornare lectus sit amet
-          est. Et netus et malesuada fames. Aliquam vestibulum morbi blandit
-          cursus risus at. Nisi lacus sed viverra tellus in hac. Nibh mauris
-          cursus mattis molestie a iaculis at. Nulla porttitor massa id neque
-          aliquam vestibulum morbi blandit. Ullamcorper sit amet risus nullam
-          eget felis eget. Eleifend donec pretium vulputate sapien nec. Laoreet
-          non curabitur gravida arcu ac tortor dignissim convallis. In iaculis
-          nunc sed augue lacus viverra vitae. Ultrices dui sapien eget mi.
-        </p>
+        <h4>Cryptocurrency Ticker</h4>
+        <div class="flex-row">
+          <div class="ticker-row">
+            <div class="one-quarter column">
+              <ul class = "ticker">
+                <li class = "ticker-row">
+                  <p class = "ticker-symbol">&#8383;</p>
+                  <ul class = "ticker">
+                    <li><b>Bitcoin</b></li>
+                    <li>$100.00 </li>
+                  </ul>
+                </li>
+                <li class="ticker-row ticker-change">
+                  $0.01 <i class="material-icons ticker-change-icon">expand_less</i>
+                </li>
+              </ul>
+            </div>
+            <div class="one-quarter column">
+              <ul class = "ticker">
+                <li class = "ticker-row">
+                  <p class = "ticker-symbol">&#8383;</p>
+                  <ul class = "ticker">
+                    <li><b>Bitcoin Cash</b></li>
+                    <li>$100.00 </li>
+                  </ul>
+                </li>
+                <li class="ticker-row ticker-change">
+                  $0.01 <i class="material-icons ticker-change-icon">expand_less</i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ticker-row">
+            <div class="one-quarter column">
+              <ul class = "ticker">
+                <li class = "ticker-row">
+                  <p class = "ticker-symbol">&#926;</p>
+                  <ul class = "ticker">
+                    <li><b>Ethereum</b></li>
+                    <li>$100.00 </li>
+                  </ul>
+                </li>
+                <li class="ticker-row ticker-change" style = "color:red">
+                  $0.01 <i class="material-icons ticker-change-icon">expand_more</i>
+                </li>
+              </ul>
+            </div>
+            <div class="one-quarter column">
+              <ul class = "ticker">
+                <li class = "ticker-row">
+                  <p class = "ticker-symbol">&#321;</p>
+                  <ul class = "ticker">
+                    <li><b>Litecoin</b></li>
+                    <li>$100.00 </li>
+                  </ul>
+                </li>
+                <li class="ticker-row ticker-change">
+                  $0.01 <i class="material-icons ticker-change-icon">expand_less</i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row content">
-        <h4>Metamask Balance Placeholder</h4>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Venenatis cras sed
-        felis eget velit aliquet sagittis. Ut ornare lectus sit amet est. Et
-        netus et malesuada fames. Aliquam vestibulum morbi blandit cursus risus
-        at. Nisi lacus sed viverra tellus in hac. Nibh mauris cursus mattis
-        molestie a iaculis at. Nulla porttitor massa id neque aliquam vestibulum
-        morbi blandit. Ullamcorper sit amet risus nullam eget felis eget.
-        Eleifend donec pretium vulputate sapien nec. Laoreet non curabitur
-        gravida arcu ac tortor dignissim convallis. In iaculis nunc sed augue
-        lacus viverra vitae. Ultrices dui sapien eget mi.
+        <h4 style ="margin-bottom:0">Metamask Balance: <b>0 ether</b> </h4>
+        <p>on the ropsten test network</p>
+        <a class="button button-primary" id="ref-metamask">Refresh Balance</a>
       </div>
       <div class="row footer" style="border-top: 1px solid #eee">
-        <p>
-          INSERT LINKS HERE
-        </p>
+          <div class="one-half column" style = "text-align:left">
+            last updated: September 2019
+          </div>
+          <div class="one-half column" style = "text-align:right">
+            <a href="https://github.com/aalu1418/fullstackI_project">
+              <img id = "github-logo" src="images/github_logo.png" alt="github logo">
+            </a>
+          </div>
       </div>
     </div>
 

@@ -24,7 +24,7 @@ var myChart = new Chart(ctx, {
         fill: true,
         backgroundColor: fillColors.blue,
         borderColor: mainColors.blue,
-        lineTension: 0.05
+        lineTension: 0.05,
       },
       {
         label: "test 2",
