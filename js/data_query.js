@@ -4,7 +4,9 @@ function curr_query() {
     url:
       "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cbitcoin-cash%2Cethereum%2Clitecoin&vs_currencies=usd%2Ccad%2Ceur",
     success: result => data_update(result),
+    complete: () => plotter(),
   });
+  console.log("single query");
 }
 
 // query for historical prices at a specific date
