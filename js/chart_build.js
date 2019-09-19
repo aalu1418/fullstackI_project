@@ -47,7 +47,7 @@ const plotter = () => {
       datasets: [
         {
           label: "Bitcoin",
-          data: [...data_obj["bitcoin"][currency]],
+          data: data_obj["bitcoin"][currency],
           fill: true,
           backgroundColor: fillColors.blue,
           borderColor: mainColors.blue,
@@ -56,7 +56,7 @@ const plotter = () => {
         },
         {
           label: "Bitcoin Cash",
-          data: [...data_obj["bitcoin-cash"][currency]],
+          data: data_obj["bitcoin-cash"][currency],
           fill: true,
           backgroundColor: fillColors.green,
           borderColor: mainColors.green,
@@ -65,7 +65,7 @@ const plotter = () => {
         },
         {
           label: "Ethereum",
-          data: [...data_obj["ethereum"][currency]],
+          data: data_obj["ethereum"][currency],
           fill: true,
           backgroundColor: fillColors.orange,
           borderColor: mainColors.orange,
@@ -74,7 +74,7 @@ const plotter = () => {
         },
         {
           label: "Litecoin",
-          data: [...data_obj["litecoin"][currency]],
+          data: data_obj["litecoin"][currency],
           fill: true,
           backgroundColor: fillColors.red,
           borderColor: mainColors.red,

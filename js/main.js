@@ -13,6 +13,8 @@ let toggleOther = (button_array) => {
   $(event.target).addClass("button-primary");
   button_array.filter(element => event.target.id != element).forEach(element => $('#'+element).removeClass("button-primary"))
   currency = event.target.id.toLowerCase();
+  myChart.data.datasets.forEach((set) => set.data = data_obj[set.label.replace(/\s+/g, '-').toLowerCase()][currency])
+  // plotter(); //calls plotter to regenerate plot instead of update (only adjusts a little bit)
   myChart.update();
 }
 
