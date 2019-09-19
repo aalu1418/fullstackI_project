@@ -4,7 +4,7 @@ function curr_query() {
     url:
       "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cbitcoin-cash%2Cethereum%2Clitecoin&vs_currencies=usd%2Ccad%2Ceur",
     success: result => data_update(result),
-    complete: () => plotter(),
+    // complete: () => myChart.update(),
   });
   // console.log("single query");
 }
@@ -36,7 +36,7 @@ let dayrange_query = (coinID, currency) => {
       // console.log(data_obj[coinID][currency]);
       data_obj[coinID][currency].unshift(
         ...result.prices
-          .slice(-chart_length + 1)
+          .slice(-chart_length, -1)
           .map(element => Number(element[1].toFixed(2)))
       );
     },

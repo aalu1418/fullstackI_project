@@ -12,7 +12,7 @@ const mainColors = chartColors(1);
 const fillColors = chartColors(0.2);
 
 //Chart Data Structs
-const chart_length = 20;
+const chart_length = 60;
 let data_obj = {};
 
 let data_update = new_dat => {
@@ -31,50 +31,55 @@ let data_update = new_dat => {
         data_obj[crypto_key][curr_key].shift();
       })
     );
+    myChart.update();
   }
 };
 
 // Chart information---------------------------------
+let myChart = {}
+let currency = "usd";
 const plotter = () => {
-  let currency = "usd";
   const ctx = document.getElementById("myChart").getContext("2d");
-  let myChart = new Chart(ctx, {
+  myChart = new Chart(ctx, {
     type: "line",
     data: {
       labels: new Array(chart_length).fill(""),
       datasets: [
-        // {
-        //   label: "Bitcoin",
-        //   data: data_obj["bitcoin"][currency],
-        //   fill: true,
-        //   backgroundColor: fillColors.blue,
-        //   borderColor: mainColors.blue,
-        //   lineTension: 0.05
-        // },
-        // {
-        //   label: "Bitcoin Cash",
-        //   data: data_obj["bitcoin-cash"][currency],
-        //   fill: true,
-        //   backgroundColor: fillColors.green,
-        //   borderColor: mainColors.green,
-        //   lineTension: 0.05
-        // },
-        // {
-        //   label: "Ethereum",
-        //   data: data_obj["ethereum"][currency],
-        //   fill: true,
-        //   backgroundColor: fillColors.orange,
-        //   borderColor: mainColors.orange,
-        //   lineTension: 0.05
-        // },
+        {
+          label: "Bitcoin",
+          data: [...data_obj["bitcoin"][currency]],
+          fill: true,
+          backgroundColor: fillColors.blue,
+          borderColor: mainColors.blue,
+          lineTension: 0.05,
+          hidden: false,
+        },
+        {
+          label: "Bitcoin Cash",
+          data: [...data_obj["bitcoin-cash"][currency]],
+          fill: true,
+          backgroundColor: fillColors.green,
+          borderColor: mainColors.green,
+          lineTension: 0.05,
+          hidden: false,
+        },
+        {
+          label: "Ethereum",
+          data: [...data_obj["ethereum"][currency]],
+          fill: true,
+          backgroundColor: fillColors.orange,
+          borderColor: mainColors.orange,
+          lineTension: 0.05,
+          hidden: false,
+        },
         {
           label: "Litecoin",
-          data: data_obj["litecoin"]["usd"],
+          data: [...data_obj["litecoin"][currency]],
           fill: true,
           backgroundColor: fillColors.red,
           borderColor: mainColors.red,
           lineTension: 0.05,
-          hidden: true,
+          hidden: false,
         }
       ]
     },

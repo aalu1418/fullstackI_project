@@ -12,11 +12,15 @@ $("#USD, #CAD, #EUR").click(() => toggleOther(["USD", "CAD", "EUR"])) //change d
 let toggleOther = (button_array) => {
   $(event.target).addClass("button-primary");
   button_array.filter(element => event.target.id != element).forEach(element => $('#'+element).removeClass("button-primary"))
+  currency = event.target.id.toLowerCase();
+  myChart.update();
 }
 
 //button - toggle graphs
 let toggleData = () => {
   $(event.target).toggleClass("button-primary");
-  console.log(event.target.text);
-  console.log(myChart.data.datasets.filter(element => element.label === event.target.text)[0].hidden)
+  // console.log(event.target.text);
+  const toggle = myChart.data.datasets.filter(element => element.label === event.target.text)[0].hidden;
+  myChart.data.datasets.filter(element => element.label === event.target.text)[0].hidden = !toggle;
+  myChart.update();
 }
