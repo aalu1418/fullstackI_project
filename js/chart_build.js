@@ -73,7 +73,8 @@ const plotter = () => {
           fill: true,
           backgroundColor: fillColors.red,
           borderColor: mainColors.red,
-          lineTension: 0.05
+          lineTension: 0.05,
+          hidden: true,
         }
       ]
     },

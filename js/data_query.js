@@ -6,7 +6,7 @@ function curr_query() {
     success: result => data_update(result),
     complete: () => plotter(),
   });
-  console.log("single query");
+  // console.log("single query");
 }
 
 // query for historical prices at a specific date
