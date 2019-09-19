@@ -28,8 +28,8 @@
 }
 
 .material-icons.logo {
-  font-size: 75px;
-  animation: shadow-pulse 3s infinite;
+  font-size: 100px;
+  animation: shadow-pulse 5s infinite;
 }
 
 .ticker > .ticker-change {
@@ -38,7 +38,7 @@
 }
 .material-icons.ticker-change-icon {
   font-size: 60px;
-  animation: shadow-pulse 3s infinite;
+  animation: shadow-pulse 2.5s infinite;
 }
 
 .continue-bar {
@@ -92,7 +92,7 @@ html {
   0% {
     transform: scale(1);
   }
-  50% {
+  40% {
     transform: scale(1.2);
     opacity: 0.1;
   }
