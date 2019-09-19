@@ -31,7 +31,7 @@ let data_update = new_dat => {
       )
     );
   }
-};
+}
 
 // Chart information---------------------------------
 const plotter = () => {

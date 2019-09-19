@@ -1,5 +1,1 @@
-curr_query().then(
-  () => {
-    plotter()
-  }
-);
+curr_query();
