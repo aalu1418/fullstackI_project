@@ -33,8 +33,12 @@
 }
 
 .ticker > .ticker-change {
-  font-size: 45px;
+  font-size: 20pt;
   /* color: green; */
+}
+
+.ticker-change > p {
+  margin: 0;
 }
 .material-icons.ticker-change-icon {
   font-size: 60px;
@@ -51,7 +55,7 @@
 }
 
 .ticker li {
-  font-size: 12pt;
+  font-size: 10pt;
   margin-bottom: 0pt;
   width : 100px;
 }
