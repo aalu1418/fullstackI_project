@@ -34,7 +34,7 @@
 
 .ticker > .ticker-change {
   font-size: 45px;
-  color: green;
+  /* color: green; */
 }
 .material-icons.ticker-change-icon {
   font-size: 60px;

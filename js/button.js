@@ -2,7 +2,7 @@
 $("#BTC, #BCH, #ETH, #LTC").click(() => toggleData()) //toggle on & off crypto
 $("#USD, #CAD, #EUR").click(() => toggleOther(["USD", "CAD", "EUR"])) //change display currency
 
-//button - toggle other buttons
+//button - toggle other buttons & change currency displayed
 let toggleOther = (button_array) => {
   $(event.target).addClass("button-primary");
   button_array.filter(element => event.target.id != element).forEach(element => $('#'+element).removeClass("button-primary"))

@@ -1,10 +1,13 @@
 //definitions
-let coin_hist = {};
-const time_frames = ["day", "week", "month", "year"];
 let myChart = {}
-let currency = "usd";
 const chart_length = 60;
 let data_obj = {};
+let ticker_keys = [];
+let coin_hist = {};
+let currency = "cad";
+let current_prices = [];
+let time_period = "day";
+const time_frames = ["day", "week", "month", "year"];
 
 // Chart Colors
 const chartColors = opacity => ({
