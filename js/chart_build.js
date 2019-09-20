@@ -1,16 +1,3 @@
-// Chart Colors
-const chartColors = opacity => ({
-  red: "rgba(255, 99, 132," + opacity + ")",
-  orange: "rgba(255, 159, 64," + opacity + ")",
-  yellow: "rgba(255, 205, 86," + opacity + ")",
-  green: "rgba(75, 192, 192," + opacity + ")",
-  blue: "rgba(54, 162, 235," + opacity + ")",
-  purple: "rgba(153, 102, 255," + opacity + ")",
-  grey: "rgba(201, 203, 207," + opacity + ")"
-});
-const mainColors = chartColors(1);
-const fillColors = chartColors(0.2);
-
 //Chart Data Structs
 let data_update = new_dat => {
   if (Object.keys(data_obj).length === 0) {

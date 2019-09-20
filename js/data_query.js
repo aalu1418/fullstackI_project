@@ -10,7 +10,7 @@ function curr_query() {
 }
 
 // query for historical prices at a specific date
-let hist_query = (coinID, date) => {
+let hist_query = (coinID, date, timeframe) => {
   $.ajax({
     url:
       "https://api.coingecko.com/api/v3/coins/" +
@@ -18,7 +18,8 @@ let hist_query = (coinID, date) => {
       "/history?date=" +
       date,
     success: result => {
-      console.log(result);
+      // https://stackoverflow.com/questions/17781472/how-to-get-a-subset-of-a-javascript-objects-properties
+      coin_hist[timeframe] = {[coinID]: (({ usd, cad, eur }) => ({ usd, cad, eur }))(result.market_data.current_price)};
     }
   });
 };
