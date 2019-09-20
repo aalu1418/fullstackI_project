@@ -12,9 +12,6 @@ const mainColors = chartColors(1);
 const fillColors = chartColors(0.2);
 
 //Chart Data Structs
-const chart_length = 60;
-let data_obj = {};
-
 let data_update = new_dat => {
   if (Object.keys(data_obj).length === 0) {
     data_obj = new_dat;
@@ -33,11 +30,10 @@ let data_update = new_dat => {
     );
     myChart.update();
   }
+  ticker_update();
 };
 
 // Chart information---------------------------------
-let myChart = {}
-let currency = "usd";
 const plotter = () => {
   const ctx = document.getElementById("myChart").getContext("2d");
   myChart = new Chart(ctx, {

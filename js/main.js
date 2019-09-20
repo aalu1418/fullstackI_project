@@ -1,28 +1,13 @@
+//definitions
+let coin_hist = {};
+const time_frames = ["day", "week", "month", "year"]
+let myChart = {}
+let currency = "usd";
+const chart_length = 60;
+let data_obj = {};
+
 //calls to start the page
 curr_query();
 
 //auto querying the api for new data (every 1 minute)
 $(document).ready(() => setInterval("curr_query()", 60000));
-
-//buttons listeners
-$("#BTC, #BCH, #ETH, #LTC").click(() => toggleData()) //toggle on & off crypto
-$("#USD, #CAD, #EUR").click(() => toggleOther(["USD", "CAD", "EUR"])) //change display currency
-
-//button - toggle other buttons
-let toggleOther = (button_array) => {
-  $(event.target).addClass("button-primary");
-  button_array.filter(element => event.target.id != element).forEach(element => $('#'+element).removeClass("button-primary"))
-  currency = event.target.id.toLowerCase();
-  myChart.data.datasets.forEach((set) => set.data = data_obj[set.label.replace(/\s+/g, '-').toLowerCase()][currency])
-  // plotter(); //calls plotter to regenerate plot instead of update (only adjusts a little bit)
-  myChart.update();
-}
-
-//button - toggle graphs
-let toggleData = () => {
-  $(event.target).toggleClass("button-primary");
-  // console.log(event.target.text);
-  const toggle = myChart.data.datasets.filter(element => element.label === event.target.text)[0].hidden;
-  myChart.data.datasets.filter(element => element.label === event.target.text)[0].hidden = !toggle;
-  myChart.update();
-}

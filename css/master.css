@@ -69,6 +69,12 @@
   font-weight: bold;
 }
 
+.ticker-title {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
