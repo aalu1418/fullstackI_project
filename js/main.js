@@ -6,8 +6,8 @@ let ticker_keys = [];
 let coin_hist = {};
 let currency = "cad";
 let current_prices = [];
-let time_period = "day";
-const time_frames = ["day", "week", "month", "year"];
+let time_period = "hour";
+const time_frames = ["hour", "day", "week", "month", "year"];
 
 // Chart Colors
 const chartColors = opacity => ({

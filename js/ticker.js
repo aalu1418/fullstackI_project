@@ -53,13 +53,7 @@ let get_history = () => new Promise(async resolve =>{
 
 //update change of each coin
 let ticker_change_update = () => {
-  let historical_price = []
-  if (time_period === "hour"){
-    historical_price = ticker_keys.map((key) => data_obj[key][currency][0])
-  }
-  else {
-    historical_price = ticker_keys.map((key) => coin_hist[time_period][key][currency])
-  }
+  const historical_price = ticker_keys.map((key) => coin_hist[time_period][key][currency])
   const price_change = current_prices.map((element, index) => element - historical_price[index])
 
   const change_string = price_change.map((element) => {
