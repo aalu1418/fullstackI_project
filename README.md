@@ -38,11 +38,15 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [Metamask Integration](https://medium.com/coinmonks/tutorial-how-to-connect-a-javascript-front-end-to-a-smart-contract-6af4bdf45f7a)
 - [Web3 Introduction](http://www.dappuniversity.com/articles/web3-js-intro)
 
-### Ideas
-- [ ] Single page website
-- [ ] Realtime plotting of price of various cryptocurrencies (js librarie - api calls)
-- [ ] Ability to toggle on/off (buttons - js listeners)
-- [ ] Ability to change currency: USD/CAD/Euro (buttons - js listeners - api calls)
+### To-Do
+- [x] Single page website
+- [x] Realtime plotting of price of various cryptocurrencies (js librarie - api calls)
+- [x] Ability to toggle on/off (buttons - js listeners)
+- [x] Ability to change currency: USD/CAD/Euro (buttons - js listeners - api calls)
 - [ ] Show bar w/ current metamask balance in multiple currencies (web3)
-- [ ] Axios for ajax calls (using jquery instead)
+- [x] Axios for ajax calls (using jquery instead)
 - [ ] timeout in case of no internet connection
+- [ ] help icon - pop-up w/ data
+- [ ] change time range for ticker
+- [ ] favicon
+- [ ] error w/ Chart.js but doesn't stop page from functioning

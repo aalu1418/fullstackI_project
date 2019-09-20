@@ -34,7 +34,7 @@
 
 .ticker > .ticker-change {
   font-size: 45px;
-  color: green;
+  /* color: green; */
 }
 .material-icons.ticker-change-icon {
   font-size: 60px;
@@ -67,6 +67,12 @@
   margin: 0;
   font-size: 24pt;
   font-weight: bold;
+}
+
+.ticker-title {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
 }
 
 .flex-row {

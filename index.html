@@ -38,6 +38,7 @@
     />
     <script src="node_modules/chart.js/dist/Chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="node_modules/moment/moment.js"></script>
   </head>
   <body>
     <!-- Primary Page Layout
@@ -71,14 +72,17 @@
           </div>
           <div class="row option-box">
             <h5>Currency Conversion</h5>
-            <a class="button" id="CAD">CAD</a>
-            <a class="button button-primary" id="USD">USD</a>
+            <a class="button button-primary" id="CAD">CAD</a>
+            <a class="button" id="USD">USD</a>
             <a class="button" id="EUR">EUR</a>
           </div>
         </div>
       </div>
       <div class="row content">
-        <h4>Cryptocurrency Ticker</h4>
+        <div class="ticker-title">
+          <h4 style = "padding-right: 10px">Cryptocurrency Ticker:</h4>
+          <a class="button button-primary" id="time-period">1-hour</a>
+        </div>
         <div class="flex-row">
           <div class="ticker-row">
             <div class="one-quarter column">
@@ -87,11 +91,12 @@
                   <p class = "ticker-symbol">&#8383;</p>
                   <ul class = "ticker">
                     <li><b>Bitcoin</b></li>
-                    <li>$100.00 </li>
+                    <li id="price-bitcoin">US $-.-- </li>
                   </ul>
                 </li>
                 <li class="ticker-row ticker-change">
-                  $0.01 <i class="material-icons ticker-change-icon">expand_less</i>
+                  <p id="change-bitcoin">$0.00</p>
+                  <i class="material-icons ticker-change-icon">expand_less</i>
                 </li>
               </ul>
             </div>
@@ -101,11 +106,12 @@
                   <p class = "ticker-symbol">&#8383;</p>
                   <ul class = "ticker">
                     <li><b>Bitcoin Cash</b></li>
-                    <li>$100.00 </li>
+                    <li id="price-bitcoin-cash">US $-.-- </li>
                   </ul>
                 </li>
                 <li class="ticker-row ticker-change">
-                  $0.01 <i class="material-icons ticker-change-icon">expand_less</i>
+                  <p id="change-bitcoin-cash">$0.00</p>
+                  <i class="material-icons ticker-change-icon">expand_less</i>
                 </li>
               </ul>
             </div>
@@ -117,11 +123,12 @@
                   <p class = "ticker-symbol">&#926;</p>
                   <ul class = "ticker">
                     <li><b>Ethereum</b></li>
-                    <li>$100.00 </li>
+                    <li id="price-ethereum">US $-.-- </li>
                   </ul>
                 </li>
-                <li class="ticker-row ticker-change" style = "color:red">
-                  $0.01 <i class="material-icons ticker-change-icon">expand_more</i>
+                <li class="ticker-row ticker-change">
+                  <p id="change-ethereum">$0.00</p>
+                  <i class="material-icons ticker-change-icon">expand_more</i>
                 </li>
               </ul>
             </div>
@@ -131,11 +138,12 @@
                   <p class = "ticker-symbol">&#321;</p>
                   <ul class = "ticker">
                     <li><b>Litecoin</b></li>
-                    <li>$100.00 </li>
+                    <li id="price-litecoin">US $-.-- </li>
                   </ul>
                 </li>
                 <li class="ticker-row ticker-change">
-                  $0.01 <i class="material-icons ticker-change-icon">expand_less</i>
+                  <p id="change-litecoin">$0.00</p>
+                  <i class="material-icons ticker-change-icon">expand_less</i>
                 </li>
               </ul>
             </div>
@@ -149,7 +157,7 @@
       </div>
       <div class="row footer" style="border-top: 1px solid #eee">
           <div class="one-half column" style = "text-align:left">
-            last updated: September 2019
+            Powered by <a href="https://www.coingecko.com/en/api" style="color:black">CoinGeckoAPI</a>
           </div>
           <div class="one-half column" style = "text-align:right">
             <a href="https://github.com/aalu1418/fullstackI_project">
@@ -164,5 +172,7 @@
   </body>
   <script src="js/data_query.js"></script>
   <script src="js/chart_build.js"></script>
+  <script src="js/button.js"></script>
+  <script src="js/ticker.js"></script>
   <script src="js/main.js"></script>
 </html>
