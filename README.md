@@ -47,6 +47,6 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [x] Axios for ajax calls (using jquery instead)
 - [ ] timeout in case of no internet connection
 - [ ] help icon - pop-up w/ data
-- [ ] change time range for ticker
-- [ ] favicon
+- [x] interactively change time range for ticker
+- [x] favicon
 - [ ] error w/ Chart.js but doesn't stop page from functioning
