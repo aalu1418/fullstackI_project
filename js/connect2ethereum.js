@@ -13,7 +13,7 @@ const get_balance = () => {
     const address = web3Provider.eth.defaultAccount;
     web3Provider.eth.getBalance(address, (err, wei) => {
       let balance = web3.fromWei(wei.toString(10), "ether");
-      $("#metamask-balance").text(balances);
+      $("#metamask-balance").text(balance);
       $("#metamask-note").text("Connected via Metamask plugin");
     });
   } else {
