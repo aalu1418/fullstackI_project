@@ -13,12 +13,11 @@ const get_balance = () => {
     const address = web3Provider.eth.defaultAccount;
     web3Provider.eth.getBalance(address, (err, wei) => {
       let balance = web3.fromWei(wei.toString(10), "ether");
-      $("#metamask-balance").text(balance + " ether");
+      $("#metamask-balance").text(balances);
       $("#metamask-note").text("Connected via Metamask plugin");
     });
   } else {
-    // console.log("no ethereum detected");
-    $("#metamask-note").text("Metamask plugin not detected - please input a public key (otherwise placeholder is used)");
+    $("#metamask-note").text("Metamask plugin not detected - please input a public key for ropsten network (otherwise placeholder is used)");
     let key = $("#exampleKeyInput").val();
     // console.log("input :"+key);
     if (key === ""){

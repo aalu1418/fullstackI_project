@@ -58,7 +58,7 @@ const etherscan_query = (public_key) => {
     success: result => {
       // console.log(result.result);
       const balance = result.result/1000000000000000000; //convert from wei to ether
-      $("#metamask-balance").text(balance + " ether");
+      $("#metamask-balance").text(balance);
     }
   })
 }
