@@ -1,5 +1,6 @@
 const get_balance = () => {
   if (window.ethereum) {
+    $("#manual-input").css("display", "none");
     const ethereum = window.ethereum;
     const web3Provider = new Web3(ethereum);
     ethereum.autoRefreshOnNetworkChange = false;
@@ -12,11 +13,15 @@ const get_balance = () => {
     const address = web3Provider.eth.defaultAccount;
     web3Provider.eth.getBalance(address, (err, wei) => {
       let balance = web3.fromWei(wei.toString(10), "ether");
-      $("#metamask-balance").text(balance+" ether");
-      $("#metamask-note").text("Connected via Metamask plugin")
+      $("#metamask-balance").text(balance + " ether");
+      $("#metamask-note").text("Connected via Metamask plugin");
     });
-  }
-  else {
-    $("#metamask-note").text("Metamask plugin not detected")
+  } else {
+    $("#metamask-note").text("Metamask plugin not detected");
+    let key = $("#exampleKeyInput").val();
+    if (key === ""){
+      key = $("#exampleKeyInput").attr('placeholder');
+    }
+    etherscan_query(key);
   }
 };
