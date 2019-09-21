@@ -57,7 +57,7 @@
 .ticker li {
   font-size: 10pt;
   margin-bottom: 0pt;
-  width : 100px;
+  width : 100%;
 }
 
 .ticker-row {
@@ -112,7 +112,7 @@ html {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .flex-row {
     flex-direction: column;
   }
@@ -123,6 +123,7 @@ html {
 
   .row.option-box {
     width: 50%;
+    margin-left:10pt; 
   }
 
   .ticker-row {
