@@ -17,8 +17,10 @@ const get_balance = () => {
       $("#metamask-note").text("Connected via Metamask plugin");
     });
   } else {
-    $("#metamask-note").text("Metamask plugin not detected");
+    // console.log("no ethereum detected");
+    $("#metamask-note").text("Metamask plugin not detected - please input a public key (otherwise placeholder is used)");
     let key = $("#exampleKeyInput").val();
+    // console.log("input :"+key);
     if (key === ""){
       key = $("#exampleKeyInput").attr('placeholder');
     }
