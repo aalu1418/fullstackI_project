@@ -22,6 +22,12 @@ const chartColors = opacity => ({
 const mainColors = chartColors(1);
 const fillColors = chartColors(0.2);
 
+//check internet connection
+if(!navigator.onLine) { // true|false
+	$("#myChart").css("display","none")
+  $(".empty-chart").css("display", "flex")
+}
+
 //calls to start the page
 curr_query();
 $(document).ready(() => get_balance());

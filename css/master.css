@@ -18,9 +18,14 @@
 .footer {
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+}
+
+.empty-chart {
+  height: 300pt;
+  font-size: 20pt;
 }
 
 .row.option-box {
@@ -57,7 +62,7 @@
 .ticker li {
   font-size: 10pt;
   margin-bottom: 0pt;
-  width : 100%;
+  width: 100%;
 }
 
 .ticker-row {
@@ -123,7 +128,7 @@ html {
 
   .row.option-box {
     width: 50%;
-    margin-left:10pt; 
+    margin-left: 10pt;
   }
 
   .ticker-row {
