@@ -8,7 +8,6 @@ let currency = "cad";
 let current_prices = [];
 let time_period = "hour";
 const time_frames = ["hour", "day", "week", "month", "year"];
-let web3Provider = {};
 
 // Chart Colors
 const chartColors = opacity => ({
@@ -25,7 +24,7 @@ const fillColors = chartColors(0.2);
 
 //calls to start the page
 curr_query();
-$(document).ready(() => initialize_web3());
+$(document).ready(() => get_balance());
 
 //auto querying the api for new data (every 1 minute)
 $(document).ready(() => setInterval("curr_query()", 60000));
