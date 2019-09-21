@@ -1,7 +1,8 @@
 //button listeners
 $("#BTC, #BCH, #ETH, #LTC").click(() => toggleData()); //toggle on & off crypto
 $("#USD, #CAD, #EUR").click(() => toggleOther(["USD", "CAD", "EUR"])); //change display currency
-$("#time-period").click(() => toggleTime());
+$("#time-period").click(() => toggleTime()); //change the length of time for ticker display
+$("#check-balance").click(() => get_balance()); //update ether balance
 
 //button - toggle other buttons & change currency displayed
 let toggleOther = button_array => {

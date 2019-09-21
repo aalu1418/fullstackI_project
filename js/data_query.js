@@ -1,5 +1,5 @@
 // query for current prices
-function curr_query() {
+const curr_query = () => {
   $.ajax({
     url:
       "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cbitcoin-cash%2Cethereum%2Clitecoin&vs_currencies=usd%2Ccad%2Ceur",
@@ -10,7 +10,7 @@ function curr_query() {
 }
 
 // query for historical prices at a specific date
-let hist_query = (coinID, date, timeframe) => new Promise(resolve => {
+const hist_query = (coinID, date, timeframe) => new Promise(resolve => {
   // console.log("hist query called");
   $.ajax({
     url:
@@ -31,7 +31,7 @@ let hist_query = (coinID, date, timeframe) => new Promise(resolve => {
 })
 
 //query for historical prices within a 1 day range
-let dayrange_query = (coinID, currency) => {
+const dayrange_query = (coinID, currency) => {
   $.ajax({
     url:
       "https://api.coingecko.com/api/v3/coins/" +
@@ -50,3 +50,15 @@ let dayrange_query = (coinID, currency) => {
     complete: () => plotter(),
   });
 };
+
+const etherscan_query = (public_key) => {
+  // console.log("etherscan-query");
+  $.ajax({
+    url:"https://api-ropsten.etherscan.io/api?module=account&action=balance&address="+public_key+"&tag=latest",
+    success: result => {
+      // console.log(result.result);
+      const balance = result.result/1000000000000000000; //convert from wei to ether
+      $("#metamask-balance").text(balance);
+    }
+  })
+}

@@ -37,16 +37,18 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [Coin Gecko - crypto prices api](https://www.coingecko.com/en)
 - [Metamask Integration](https://medium.com/coinmonks/tutorial-how-to-connect-a-javascript-front-end-to-a-smart-contract-6af4bdf45f7a)
 - [Web3 Introduction](http://www.dappuniversity.com/articles/web3-js-intro)
+- [Run Local Host - Simple](https://stackoverflow.com/questions/38497334/how-to-run-html-file-on-localhost)
 
 ### To-Do
 - [x] Single page website
 - [x] Realtime plotting of price of various cryptocurrencies (js librarie - api calls)
 - [x] Ability to toggle on/off (buttons - js listeners)
 - [x] Ability to change currency: USD/CAD/Euro (buttons - js listeners - api calls)
-- [ ] Show bar w/ current metamask balance in multiple currencies (web3)
+- [x] Show bar w/ current metamask balance in multiple currencies (web3)
 - [x] Axios for ajax calls (using jquery instead)
 - [ ] timeout in case of no internet connection
 - [ ] help icon - pop-up w/ data
 - [x] interactively change time range for ticker
 - [x] favicon
 - [ ] error w/ Chart.js but doesn't stop page from functioning
+- [ ] background image in header?

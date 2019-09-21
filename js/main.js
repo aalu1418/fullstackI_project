@@ -24,6 +24,7 @@ const fillColors = chartColors(0.2);
 
 //calls to start the page
 curr_query();
+$(document).ready(() => get_balance());
 
 //auto querying the api for new data (every 1 minute)
 $(document).ready(() => setInterval("curr_query()", 60000));
