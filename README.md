@@ -51,3 +51,4 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [x] interactively change time range for ticker
 - [x] favicon
 - [x] error w/ Chart.js but doesn't stop page from functioning
+- [ ] comment code & write up documentation in readme
