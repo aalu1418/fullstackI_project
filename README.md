@@ -50,5 +50,5 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [ ] help icon - pop-up w/ data
 - [x] interactively change time range for ticker
 - [x] favicon
-- [ ] error w/ Chart.js but doesn't stop page from functioning
+- [x] error w/ Chart.js but doesn't stop page from functioning
 - [ ] background image in header?

@@ -68,6 +68,8 @@ const plotter = () => {
         }
       ]
     },
-    options: {}
+    options: {
+      events: []
+    }
   });
 };
