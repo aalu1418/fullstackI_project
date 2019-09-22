@@ -46,7 +46,7 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [x] Ability to change currency: USD/CAD/Euro (buttons - js listeners - api calls)
 - [x] Show bar w/ current metamask balance in multiple currencies (web3)
 - [x] Axios for ajax calls (using jquery instead)
-- [ ] timeout in case of no internet connection
+- [x] timeout in case of no internet connection
 - [ ] help icon - pop-up w/ data
 - [x] interactively change time range for ticker
 - [x] favicon
