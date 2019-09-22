@@ -58,9 +58,14 @@
       </div>
       <div class="row content flex-row" style="padding-top: 10%">
         <div class="two-thirds column" id="plot-box">
-          <h4>Price History <i class="material-icons help-button">help_outline</i></h4>
+          <h4>
+            Price History <i class="material-icons help-button">help_outline</i>
+          </h4>
           <p class="help-box">
-            Use the cryptocurrency buttons and currency conversion buttons to toggle the graph - which shows the last 60 data points (approximately 1 per minute). The graph updates every minute.
+            A graph that updates every minute for the current price of a
+            cryptocurrency and shows the last 60 data points (approximately 1
+            per minute). Use the crypotcurrency and currency button to adjust
+            the chart.
           </p>
           <canvas id="myChart" width="400" height="300"></canvas>
           <div class="row flex-row empty-chart" style="display:none">
@@ -84,9 +89,15 @@
         </div>
       </div>
       <div class="row content">
-        <h4 style="padding-right: 10px">Cryptocurrency Ticker: <i class="material-icons help-button">help_outline</i> <a class="button button-primary" id="time-period">1-hour</a></h4>
+        <h4 style="padding-right: 10px">
+          Cryptocurrency Ticker:
+          <i class="material-icons help-button">help_outline</i>
+          <a class="button button-primary" id="time-period" style="margin:0">1-hour</a>
+        </h4>
         <p class="help-box">
-          Use the cryptocurrency buttons and currency conversion buttons to toggle the graph - which shows the last 60 data points (approximately 1 per minute). The graph updates every minute.
+          A section that shows the current price (in the currency specified
+          above), the change over a time period, and updates every minute. Click
+          on the time period to cycle through the various times.
         </p>
         <div class="flex-row">
           <div class="ticker-row">
@@ -158,17 +169,23 @@
       <div class="row content">
         <div>
           <h4 style="margin-bottom:0">
-            Ether Balance: <i class="material-icons help-button">help_outline</i>
+            Ether Balance:
+            <i class="material-icons help-button">help_outline</i>
           </h4>
           <p class="help-box">
-            Use the cryptocurrency buttons and currency conversion buttons to toggle the graph - which shows the last 60 data points (approximately 1 per minute). The graph updates every minute.
+            A section that can incorporates a users Metamask plugin to get their
+            currenct ether balance. If a Metamask plugin is not installed, a
+            user can manually input a public key to get the current ether
+            balance on the ropsten network.
           </p>
-          <h5><b id="metamask-balance">---</b
-          ><img
-            src="images/Ethereum_logo_2014.svg"
-            alt="ethereum-logo"
-            style="height:20pt; padding-left:7.5pt"
-          /></h5>
+          <h5>
+            <b id="metamask-balance">---</b
+            ><img
+              src="images/Ethereum_logo_2014.svg"
+              alt="ethereum-logo"
+              style="height:20pt; padding-left:7.5pt"
+            />
+          </h5>
           <p id="metamask-note"></p>
         </div>
         <div class="row" id="manual-input" style="display:block">
