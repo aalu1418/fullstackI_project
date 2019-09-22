@@ -78,12 +78,6 @@
   font-weight: bold;
 }
 
-.ticker-title {
-  display: flex;
-  flex-direction: row;
-  align-items: top;
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -93,6 +87,14 @@
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+.help-box {
+  display:none;
+}
+
+.material-icons.help-button {
+  font-size: 12pt;
+  cursor:pointer;
 }
 
 #github-logo {

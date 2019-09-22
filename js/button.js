@@ -3,6 +3,7 @@ $("#BTC, #BCH, #ETH, #LTC").click(() => toggleData()); //toggle on & off crypto
 $("#USD, #CAD, #EUR").click(() => toggleOther(["USD", "CAD", "EUR"])); //change display currency
 $("#time-period").click(() => toggleTime()); //change the length of time for ticker display
 $("#check-balance").click(() => get_balance()); //update ether balance
+$(".help-button").click(() => toggleHelp()); //toggle help text
 
 //button - toggle other buttons & change currency displayed
 let toggleOther = button_array => {
@@ -47,3 +48,12 @@ let toggleTime = () => {
   $("#time-period").text("1-"+time_period);
   ticker_update();
 };
+
+
+//button - show help text
+let toggleHelp = () => {
+  // $(event.target).closest("p.help-box").slideToggle();
+  // console.log($(event.target).parent().next(".help-box"))
+  const obj = $(event.target).parent().next(".help-box");
+  $(obj).slideToggle();
+}
