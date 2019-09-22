@@ -47,7 +47,7 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [x] Show bar w/ current metamask balance in multiple currencies (web3)
 - [x] Axios for ajax calls (using jquery instead)
 - [x] timeout in case of no internet connection
-- [ ] help icon - pop-up w/ data
+- [x] help icon - pop-up w/ data
 - [x] interactively change time range for ticker
 - [x] favicon
 - [x] error w/ Chart.js but doesn't stop page from functioning
