@@ -94,6 +94,13 @@
   display: flex;
   flex-direction: column;
 }
+.help-box {
+  display:block;
+}
+
+.material-icons.help-button {
+  font-size: 12pt;
+}
 
 #github-logo {
   height: 40px;
