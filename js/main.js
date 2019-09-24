@@ -1,4 +1,4 @@
-//definitions
+//definitions (global variabless)
 let myChart = {}
 const chart_length = 60;
 let data_obj = {};
@@ -25,7 +25,7 @@ const fillColors = chartColors(0.2);
 //check internet connection
 if(!navigator.onLine) { // true|false
 	$("#myChart").css("display","none")
-  $(".empty-chart").css("display", "flex")
+  $(".empty-chart").css("display", "flex") //if no internet show empty chart
 }
 
 //calls to start the page

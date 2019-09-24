@@ -21,16 +21,15 @@ const hist_query = (coinID, date, timeframe) => new Promise(resolve => {
     success: result => {
       // https://stackoverflow.com/questions/17781472/how-to-get-a-subset-of-a-javascript-objects-properties
       if (coin_hist[timeframe] === undefined){
-        coin_hist[timeframe] = {};
+        coin_hist[timeframe] = {}; //create object if the object doesn't exist
       }
-      coin_hist[timeframe][coinID] = (({ usd, cad, eur }) => ({ usd, cad, eur }))(result.market_data.current_price);
-      // console.log("hist query completed")
-      resolve();
+      coin_hist[timeframe][coinID] = (({ usd, cad, eur }) => ({ usd, cad, eur }))(result.market_data.current_price); //add data to objects
+      resolve();//resolve promise
     }
   });
 })
 
-//query for historical prices within a 1 day range
+//query for historical prices within a 1 day range (used to populate plot at the beginning)
 const dayrange_query = (coinID, currency) => {
   $.ajax({
     url:
@@ -44,17 +43,17 @@ const dayrange_query = (coinID, currency) => {
       data_obj[coinID][currency].unshift(
         ...result.prices
           .slice(-chart_length, -1)
-          .map(element => Number(element[1].toFixed(2)))
+          .map(element => Number(element[1].toFixed(2))) //pull data formatted to two decimal places for a certain length
       );
     },
-    complete: () => plotter(),
+    complete: () => plotter(), //call plotter when complete
   });
 };
 
 const etherscan_query = (public_key) => {
   // console.log("etherscan-query");
   $.ajax({
-    url:"https://api-ropsten.etherscan.io/api?module=account&action=balance&address="+public_key+"&tag=latest",
+    url:"https://api-ropsten.etherscan.io/api?module=account&action=balance&address="+public_key+"&tag=latest", //query etherscan for public key wei balance on ropsten
     success: result => {
       // console.log(result.result);
       const balance = result.result/1000000000000000000; //convert from wei to ether
