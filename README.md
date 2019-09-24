@@ -1,5 +1,36 @@
 # Full-Stack Web Development I - Final Project
 
+### Project Description
+General functions
+- plot historical data of cryptocurrency price - updates every minute
+- ability to toggle view of various cryptocurrency and base currencies
+- ticker that displays the current price and change over a period of time that can be toggled
+- Metamask integration (if present) to get user's ether balance
+- Otherwise allows for use input of public key to get ether balance on ropsten
+- Help buttons show text for assistance if opened
+
+js libraries
+- jquery: used for ajax calls and button listeners
+- chart.js: used for plotting cryptocurrency price data
+- moment: used for getting date from certain intervals for price change
+
+CSS libraries
+- Skeleton CSS: used for basic framework - simple and clean
+- Material UI Icons: material design icons used for ticker and navigation
+
+Ajax calls to API
+- Coin Gecko API: used for cryptocurrency price (current and historical)
+- Etherscan API: used to get users current ether balance
+
+Metamask integration
+- access the ethereum & web3 objects using the injected js from Metamask
+
+Error handling
+- no internet handling - turns off plot
+- no Metamask handling - allows for manual input
+
+---
+
 ### Project Specs
 FULL	STACK	DEVELOPER	– 1	– FINAL	PROJECT
 DUE	DATE	– September	29,	2019
@@ -30,6 +61,8 @@ the	git	commits	don’t	demonstrate	this.	For	individuals	working	alone,	your	gi
 history	should	demonstrate	the	use	of	feature	branches.][15%]
 6. Bonus	5%	- connect	to	a	smart	contract	or	user’s	balance	 metaMask	balance	[5%]
 
+---
+
 ### Resources
 - [Skeleton CSS](http://getskeleton.com/)
 - [Material Design Icons](https://material.io/resources/icons/?style=baseline)
@@ -38,6 +71,8 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [Metamask Integration](https://medium.com/coinmonks/tutorial-how-to-connect-a-javascript-front-end-to-a-smart-contract-6af4bdf45f7a)
 - [Web3 Introduction](http://www.dappuniversity.com/articles/web3-js-intro)
 - [Run Local Host - Simple](https://stackoverflow.com/questions/38497334/how-to-run-html-file-on-localhost)
+
+---
 
 ### To-Do
 - [x] Single page website
@@ -51,4 +86,4 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [x] interactively change time range for ticker
 - [x] favicon
 - [x] error w/ Chart.js but doesn't stop page from functioning
-- [ ] comment code & write up documentation in readme
+- [x] comment code & write up documentation in readme
