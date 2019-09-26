@@ -105,6 +105,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  color:black;
+}
+
 @keyframes shadow-pulse {
   0% {
     transform: scale(1);
