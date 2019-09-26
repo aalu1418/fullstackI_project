@@ -1,4 +1,5 @@
 # Full-Stack Web Development I - Final Project
+Aaron Lu - 101278524
 
 ### Project Description
 General functions
