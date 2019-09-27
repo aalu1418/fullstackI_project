@@ -1,5 +1,7 @@
 # Full-Stack Web Development I - Final Project
 Aaron Lu - 101278524
+Website: https://aalu1418.github.io/fullstackI_project/
+Github Repo: https://github.com/aalu1418/fullstackI_projects
 
 ### Project Description
 General functions
@@ -9,6 +11,7 @@ General functions
 - Metamask integration (if present) to get user's ether balance
 - Otherwise allows for use input of public key to get ether balance on ropsten
 - Help buttons show text for assistance if opened
+- Mobile friendly layout
 
 js libraries
 - jquery: used for ajax calls and button listeners
