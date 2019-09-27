@@ -65,7 +65,7 @@
   width: 100%;
 }
 
-.ticker-row {
+.flex-row-static {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,8 +74,7 @@
 
 .ticker-symbol {
   margin: 0;
-  font-size: 24pt;
-  font-weight: bold;
+  width: 50px;
 }
 
 .flex-row {
@@ -137,7 +136,7 @@ a {
     margin-left: 10pt;
   }
 
-  .ticker-row {
+  .flex-row-static {
     width: 100%;
   }
 

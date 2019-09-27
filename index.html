@@ -100,17 +100,17 @@
           on the time period to cycle through the various times.
         </p>
         <div class="flex-row">
-          <div class="ticker-row">
+          <div class="flex-row-static">
             <div class="one-quarter column">
               <ul class="ticker">
-                <li class="ticker-row">
-                  <p class="ticker-symbol">&#8383;</p>
+                <li class="flex-row-static">
+                  <img src="images/bitcoin.svg" alt="bitcoin-logo" class="ticker-symbol"/>
                   <ul class="ticker">
                     <li><b>Bitcoin</b></li>
                     <li id="price-bitcoin">US $-.--</li>
                   </ul>
                 </li>
-                <li class="ticker-row ticker-change">
+                <li class="flex-row-static ticker-change">
                   <p id="change-bitcoin">$0.00</p>
                   <i class="material-icons ticker-change-icon">remove</i>
                 </li>
@@ -118,31 +118,31 @@
             </div>
             <div class="one-quarter column">
               <ul class="ticker">
-                <li class="ticker-row">
-                  <p class="ticker-symbol">&#8383;</p>
+                <li class="flex-row-static">
+                  <img src="images/bitcoin.svg" alt="bitcoin-logo" class="ticker-symbol"/>
                   <ul class="ticker">
                     <li><b>Bitcoin Cash</b></li>
                     <li id="price-bitcoin-cash">US $-.--</li>
                   </ul>
                 </li>
-                <li class="ticker-row ticker-change">
+                <li class="flex-row-static ticker-change">
                   <p id="change-bitcoin-cash">$0.00</p>
                   <i class="material-icons ticker-change-icon">remove</i>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="ticker-row">
+          <div class="flex-row-static">
             <div class="one-quarter column">
               <ul class="ticker">
-                <li class="ticker-row">
-                  <p class="ticker-symbol">&#926;</p>
+                <li class="flex-row-static">
+                  <img src="images/ethereum.svg" alt="ethereum-logo" class="ticker-symbol"/>
                   <ul class="ticker">
                     <li><b>Ethereum</b></li>
                     <li id="price-ethereum">US $-.--</li>
                   </ul>
                 </li>
-                <li class="ticker-row ticker-change">
+                <li class="flex-row-static ticker-change">
                   <p id="change-ethereum">$0.00</p>
                   <i class="material-icons ticker-change-icon">remove</i>
                 </li>
@@ -150,14 +150,14 @@
             </div>
             <div class="one-quarter column">
               <ul class="ticker">
-                <li class="ticker-row">
-                  <p class="ticker-symbol">&#321;</p>
+                <li class="flex-row-static">
+                  <img src="images/litecoin.svg" alt="litecoin-logo" class="ticker-symbol"/>
                   <ul class="ticker">
                     <li><b>Litecoin</b></li>
                     <li id="price-litecoin">US $-.--</li>
                   </ul>
                 </li>
-                <li class="ticker-row ticker-change">
+                <li class="flex-row-static ticker-change">
                   <p id="change-litecoin">$0.00</p>
                   <i class="material-icons ticker-change-icon">remove</i>
                 </li>
@@ -178,14 +178,14 @@
             user can manually input a public key to get the current ether
             balance on the ropsten network.
           </p>
-          <h5>
-            <b id="metamask-balance">---</b
-            ><img
-              src="images/Ethereum_logo_2014.svg"
+          <p class="flex-row-static">
+            <b style="font-size:24px" id="metamask-balance">---</b>
+            <img
+              src="images/ethereum.svg"
               alt="ethereum-logo"
               style="height:20pt; padding-left:7.5pt"
             />
-          </h5>
+          <pss>
           <p id="metamask-note"></p>
         </div>
         <div class="row" id="manual-input" style="display:block">
