@@ -91,3 +91,4 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [x] favicon
 - [x] error w/ Chart.js but doesn't stop page from functioning
 - [x] comment code & write up documentation in readme
+- [ ] fun w/ animations (https://animejs.com/)
