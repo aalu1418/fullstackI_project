@@ -12,6 +12,7 @@ General functions
 - Otherwise allows for use input of public key to get ether balance on ropsten
 - Help buttons show text for assistance if opened
 - Mobile friendly layout
+- Dark mode capability
 
 js libraries
 - jquery: used for ajax calls and button listeners
@@ -93,4 +94,4 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [x] error w/ Chart.js but doesn't stop page from functioning
 - [x] comment code & write up documentation in readme
 - [x] fun w/ animations (https://animejs.com/)
-- [ ] dark-mode?
+- [x] dark-mode (i had more time!)
