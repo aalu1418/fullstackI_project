@@ -68,10 +68,10 @@ const animate_obj = target_obj => {
 
 //handler for page resizing
 $(window).resize(() => {
-  anime.remove(".animation-logo");
+  anime.remove(".animation-logo"); //stops animations
   anime.set(".animation-logo", {
     translateX: 0,
     translateY: 0
-  });
-  start_animation()
+  }); //reset image position
+  start_animation() //restart animation
 });
