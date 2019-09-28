@@ -106,6 +106,7 @@
 .animation-logo{
   opacity: 0.2;
   width:15%;
+  position:absolute;
 }
 
 #github-logo {
