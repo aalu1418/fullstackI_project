@@ -4,6 +4,7 @@ $("#USD, #CAD, #EUR").click(() => toggleOther(["USD", "CAD", "EUR"])); //change 
 $("#time-period").click(() => toggleTime()); //change the length of time for ticker display
 $("#check-balance").click(() => get_balance()); //update ether balance
 $(".help-button").click(() => toggleHelp()); //toggle help text
+$("#darkmode").click(() => darkmode()); //toggle darkmode
 
 //button - toggle other buttons & change currency displayed
 let toggleOther = button_array => {
@@ -57,10 +58,21 @@ const toggleHelp = () => {
 }
 
 const darkmode = () => {
-  $("html").css("background-color", "#121212");
-  $("body, a").css("color", "white");
-  $("img").css("filter", "invert(100%)")
-  $("input").css("background-color", "lightgrey")
-  Chart.defaults.global.defaultFontColor = 'white';
-  myChart.update();
+  if ($("#darkmode").text() === "toggle_on"){ //turn off dark mode
+    $("#darkmode").text("toggle_off")
+    $("html").removeAttr("style");
+    $("body, a").removeAttr("style");
+    $("img").removeAttr("style");
+    $("input").removeAttr("style");
+    Chart.defaults.global.defaultFontColor = '#666';
+    myChart.update();
+  } else { //turn on dark mode
+    $("#darkmode").text("toggle_on")
+    $("html").css("background-color", "#121212");
+    $("body, a").css("color", "white");
+    $("img").css("filter", "invert(100%)")
+    $("input").css("background-color", "lightgrey")
+    Chart.defaults.global.defaultFontColor = 'white';
+    myChart.update();
+  }
 }
