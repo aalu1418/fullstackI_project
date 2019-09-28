@@ -30,6 +30,7 @@ if(!navigator.onLine) { // true|false
 
 //calls to start the page
 curr_query();
+start_animation();
 $(document).ready(() => get_balance());
 
 //auto querying the api for new data (every 1 minute)
