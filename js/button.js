@@ -36,7 +36,7 @@ let toggleData = () => {
 };
 
 //button - change time frame in ticker
-let toggleTime = () => {
+const toggleTime = () => {
   const current = $("#time-period")
     .text()
     .slice(2);// pulls time frame from "1-hour" becomes "hour"
@@ -51,7 +51,16 @@ let toggleTime = () => {
 
 
 //button - show help text
-let toggleHelp = () => {
+const toggleHelp = () => {
   const obj = $(event.target).parent().next(".help-box"); //finds following div with help-box class
   $(obj).slideToggle(); //slide toggle visibility
+}
+
+const darkmode = () => {
+  $("html").css("background-color", "#121212");
+  $("body, a").css("color", "white");
+  $("img").css("filter", "invert(100%)")
+  $("input").css("background-color", "lightgrey")
+  Chart.defaults.global.defaultFontColor = 'white';
+  myChart.update();
 }
