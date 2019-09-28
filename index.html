@@ -39,21 +39,30 @@
     <script src="node_modules/chart.js/dist/Chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/animejs/lib/anime.min.js"></script>
   </head>
   <body>
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
-      <div class="row" style="border-bottom: 1px solid #eee">
-        <div class="header">
-          <h3>welcome to</h3>
-          <h1>CryptoView</h1>
-          <p>a full stack I project by aaron lu</p>
+      <div class="row" style="border-bottom: 1px solid #eee; position:relative">
+        <div class="background-animation">
+          <img src="images/bitcoin.svg" alt="bitcoin-logo" class="animation-logo" id="animeBTC"/>
+          <img src="images/bitcoin.svg" alt="bitcoin-logo" class="animation-logo" id="animeBCH"/>
+          <img src="images/ethereum.svg" alt="ethereum-logo" class="animation-logo" id="animeETH"/>
+          <img src="images/litecoin.svg" alt="litecoin-logo" class="animation-logo" id="animeLTC"/>
         </div>
-        <div class="continue-bar">
-          <a href="#plot-box" style="color:black">
-            <i class="material-icons logo">expand_more</i>
-          </a>
+        <div>
+          <div class="header">
+            <h3>welcome to</h3>
+            <h1>CryptoView</h1>
+            <p>a full stack I project by aaron lu</p>
+          </div>
+          <div class="continue-bar">
+            <a href="#plot-box" style="color:black">
+              <i class="material-icons logo">expand_more</i>
+            </a>
+          </div>
         </div>
       </div>
       <div class="row content flex-row" style="padding-top: 10%">
@@ -234,6 +243,7 @@
   <script src="js/chart_build.js"></script>
   <script src="js/button.js"></script>
   <script src="js/ticker.js"></script>
+  <script src="js/animation.js"></script>
   <script src="js/connect2ethereum.js"></script>
   <script src="js/main.js"></script>
 </html>

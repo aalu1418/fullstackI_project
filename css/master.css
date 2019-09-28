@@ -96,6 +96,19 @@
   cursor:pointer;
 }
 
+.background-animation{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+}
+
+.animation-logo{
+  opacity: 0.2;
+  width:10%;
+  position:absolute;
+}
+
 #github-logo {
   height: 40px;
 }
