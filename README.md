@@ -1,6 +1,6 @@
 # Full-Stack Web Development I - Final Project
 Aaron Lu - 101278524  
-Website: https://aalu1418.github.io/fullstackI_project/  
+Deployed Website: https://aalu1418.github.io/fullstackI_project/  
 Github Repo: https://github.com/aalu1418/fullstackI_projects
 
 ### Project Description
@@ -34,6 +34,10 @@ Metamask integration
 Error handling
 - no internet handling - turns off plot
 - no Metamask handling - allows for manual input
+
+git/Github usage
+- branches used for major features (pull request, merged, deleted)
+- branches are visible in pull-requests -> closed branches
 
 ---
 
