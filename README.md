@@ -1,6 +1,6 @@
 # Full-Stack Web Development I - Final Project
-Aaron Lu - 101278524
-Website: https://aalu1418.github.io/fullstackI_project/
+Aaron Lu - 101278524  
+Website: https://aalu1418.github.io/fullstackI_project/  
 Github Repo: https://github.com/aalu1418/fullstackI_projects
 
 ### Project Description
@@ -17,6 +17,7 @@ js libraries
 - jquery: used for ajax calls and button listeners
 - chart.js: used for plotting cryptocurrency price data
 - moment: used for getting date from certain intervals for price change
+- anime.js: animating bouncing icons in the header
 
 CSS libraries
 - Skeleton CSS: used for basic framework - simple and clean
@@ -91,4 +92,5 @@ history	should	demonstrate	the	use	of	feature	branches.][15%]
 - [x] favicon
 - [x] error w/ Chart.js but doesn't stop page from functioning
 - [x] comment code & write up documentation in readme
-- [ ] fun w/ animations (https://animejs.com/)
+- [x] fun w/ animations (https://animejs.com/)
+- [ ] dark-mode?
